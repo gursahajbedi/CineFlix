@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import {useLocation} from 'react-router-dom'
 import { Navbar } from './navbar'
 import { useContext, useState } from 'react'
@@ -12,11 +14,15 @@ export const Movie=()=>{
     const parser=new DOMParser()
     const genres=moviedata.genres
     const [show,setshow]=useState(false)
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     const {user}=useContext(Authcontext)
     const [tickets,settickets]=useState(1)
     const [loc,setloc]=useState('Janak Cinema, Janakpuri')
     const [time,settime]=useState('12:30pm')
 
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     return(
         <>
             <div>

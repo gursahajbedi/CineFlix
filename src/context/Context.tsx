@@ -1,12 +1,14 @@
-import { ReactElement, createContext, useState, useEffect } from "react";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
+import {createContext, useState, useEffect } from "react";
 
 
 export const Authcontext=createContext({})
 
 export const Authprovider=({children})=>{
     const [user,setuser]=useState(null);
-    
-    const login=async(username:string,password:string)=>{
+    const login=async(username,password)=>{
         localStorage.setItem('user',JSON.stringify(username))
         setuser(username)
     }

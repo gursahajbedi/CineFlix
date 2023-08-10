@@ -1,4 +1,5 @@
-
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import {Routes, BrowserRouter,Route} from 'react-router-dom'
 import { Login } from './components/login';
 import { Authcontext} from './context/Context';

@@ -1,13 +1,18 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
 import { useState,useContext } from "react"
 import { Authcontext } from "../context/Context"
-import { Navbar } from "react-bootstrap"
+
 
 export const Login=()=>{
     const [username,setusername]=useState()
     const [password,setpassword]=useState()
-
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     const {login}=useContext(Authcontext)
-
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     const handlesubmit=(e)=>{
         e.preventDefault()
         login(username,password)

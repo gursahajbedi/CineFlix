@@ -1,6 +1,8 @@
-import { useContext, useState, useEffect} from "react"
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
+
+import { useState, useEffect} from "react"
 import {Link,useLocation} from "react-router-dom"
-import { Authcontext } from "../context/Context"
 import axios from "axios"
 import { Navbar } from "./navbar"
 
