@@ -1,0 +1,9 @@
+.pop{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(111,111,111,0.6);
+    z-index:9;
+}

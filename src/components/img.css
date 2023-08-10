@@ -1,0 +1,9 @@
+.moviediv{
+    height: 200px;
+    width: 200px;
+}
+.movieimg{
+    object-fit: contain;
+    height: auto;
+    width: auto;
+}
